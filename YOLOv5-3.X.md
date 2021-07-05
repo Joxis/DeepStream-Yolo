@@ -108,8 +108,8 @@ sudo ./yolov5 -s
 
 5. Create a custom yolo folder and copy generated files (example for YOLOv5s)
 ```
-mkdir /opt/nvidia/deepstream/deepstream-5.1/sources/yolo
-cp yolov5s.engine /opt/nvidia/deepstream/deepstream-5.1/sources/yolo/yolov5s.engine
+mkdir /opt/nvidia/deepstream/deepstream-6.0/sources/yolo
+cp yolov5s.engine /opt/nvidia/deepstream/deepstream-6.0/sources/yolo/yolov5s.engine
 ```
 
 <br />
@@ -131,7 +131,7 @@ Edit yolov5.cpp file before compile if you want to change this parameters.
 ### Compile nvdsinfer_custom_impl_Yolo
 1. Run command
 ```
-sudo chmod -R 777 /opt/nvidia/deepstream/deepstream-5.1/sources/
+sudo chmod -R 777 /opt/nvidia/deepstream/deepstream-6.0/sources/
 ```
 
 2. Donwload [my external/yolov5 folder](https://github.com/marcoslucianops/DeepStream-Yolo/tree/master/external/yolov5-3.X) and move files to created yolo folder
@@ -140,13 +140,13 @@ sudo chmod -R 777 /opt/nvidia/deepstream/deepstream-5.1/sources/
 
 * x86 platform
 ```
-cd /opt/nvidia/deepstream/deepstream-5.1/sources/yolo
+cd /opt/nvidia/deepstream/deepstream-6.0/sources/yolo
 CUDA_VER=11.1 make -C nvdsinfer_custom_impl_Yolo
 ```
 
 * Jetson platform
 ```
-cd /opt/nvidia/deepstream/deepstream-5.1/sources/yolo
+cd /opt/nvidia/deepstream/deepstream-6.0/sources/yolo
 CUDA_VER=10.2 make -C nvdsinfer_custom_impl_Yolo
 ```
 

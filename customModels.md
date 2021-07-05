@@ -23,7 +23,7 @@ How to edit DeepStream files to your custom model
 ### Editing default model
 1. Run command
 ```
-sudo chmod -R 777 /opt/nvidia/deepstream/deepstream-5.1/sources/
+sudo chmod -R 777 /opt/nvidia/deepstream/deepstream-6.0/sources/
 ```
 
 2. Download [my native folder](https://github.com/marcoslucianops/DeepStream-Yolo/tree/master/native), rename to yolo and move to your deepstream/sources folder.
